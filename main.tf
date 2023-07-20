@@ -40,7 +40,7 @@ resource "google_compute_firewall" "iap-tunnel" {
     ports    = ["22"]
   }
   target_tags   = ["permited-ssh"]
-  source_ranges = ["35.235.240.0/20"]
+  source_ranges = ["X.X.X.X/20"]
 }
 resource "google_service_account" "head-chef" {
   account_id   = "head-chef"
